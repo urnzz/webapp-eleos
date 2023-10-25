@@ -7,91 +7,77 @@
     appearance: 0;
     border: 0;
     text-decoration: none;
-    
-}
-.menu{
-    width: 1764px;
-    height: 117px;
-    border-radius: 25px;
-    background: #DEC4C4;
-    margin-top: 47px;
-    margin-left: 54px;
+    gap:0;
     
 }
 
-.menu .menu-direita{
+
+.login-prestador{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    margin-left: 1200px;
-    
-    
-}
-
-.menu .menu-direita .menu-texto{
-    margin-top: 40px;
-}
-
-.login{
-    display: block;
-    margin-top: -160px;
-    margin-left: 680px;
-    background: #DEC4C4;
+    margin-top: 132px;
+    margin-left: 512px;
+    margin-right: 531px;
+    background: #1F232F;
     width: 500px;
-    height: 350px;
-    flex-shrink: 0;
+    height: 500px;
+    align-items: center;
     border-radius: 3.125rem;
     
-    
-    
 }
 
-.login .login-cpf{
+.login-prestador .titulo-login{
+ margin-left: 185px;
+ font-size:50px;
+ color:#45B0D2;
+ 
+}
+
+.login-prestador .login-cpf{
     align-items: center;
 }
 
-.login .items{
-    margin-left: 160px;
-    margin-top: 80px;
+.login-prestador .items{
+    margin-left: 125px;
+    margin-top: 50px;
+    font-size:25px;
+    float: center;
 }
 
-.rodape-footer{
-    width: 1801px;
-    height: 100px;
-    border-radius: 25px;
-    background: #DEC4C4;
-    margin-top: 124px;
-    margin-left: 25px;
-
+.login-prestador .items .login-caixa1{
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 26px;
+    color:#000;
 }
 
-.rodape-footer .footer-direita{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    margin-left: 1200px;
+.login-prestador .items .login-caixa{
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    color:#000;
     
 }
 
-.rodape-footer .footer-direita .footer-texto{
-    margin-top: 40px;
+.login-prestador .items .login-botao{
+    margin-top: 70px;
+    float: center;
+    margin-left: 75px;
+    width: 100px;
+    height: 33px;
+    border-radius: 50px;
+    background-color: #45B0D2;
+    color: #F2ECF8;
 }
 
-.fundo{
-  display: flex;  
-  background:#D9D9D9;
-  width:650px;
-  height: 208px;
-  margin-top: 66px;
-  margin-left: 1116px;
-}
-
-.fundo2{
+.fundo24{
     background:#D9D9D9;
-    width:769px;
+    width:450px;
     height: 308px;
-    margin-top: -100px;
     
+
   }
 
 

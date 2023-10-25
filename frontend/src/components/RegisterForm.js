@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../pages/Menu.css'
 
 function RegisterForm({ onRegister }) {
   const [formData, setFormData] = useState({
@@ -62,6 +63,7 @@ function RegisterForm({ onRegister }) {
       <br />
 
       <label>
+        
         Username:
         <input
           type="text"
