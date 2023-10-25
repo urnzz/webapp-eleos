@@ -1,12 +1,11 @@
 .menu{
-    width: 1350px;
+    width: 1764px;
     height: 117px;
     border-radius: 25px;
     background: #DEC4C4;
     margin-top: 47px;
-    
-    
     margin-left: 54px;
+    
     
 }
 
@@ -15,15 +14,15 @@
     float:right;
     justify-content: space-around;
     margin-right: 70px;
-    gap:28px;
+    gap:40px;
     
     
 }
 
 .menu .menu-direita .menu-texto{
     margin-top: 20px;
-    gap:10px;
-    font-size: 25px;
+    gap:0px;
+    font-size: 36px;
     
 }
 
@@ -32,7 +31,7 @@
     margin-left: 61px;
 }
 .rodape-footer{
-    width: 1350px;
+    width: 1764px;
     height: 100px;
     border-radius: 25px;
     background: #DEC4C4;
