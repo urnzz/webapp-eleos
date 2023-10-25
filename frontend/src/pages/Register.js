@@ -1,12 +1,19 @@
 import React from 'react';
 import RegisterForm from '../components/RegisterForm';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom'; // Importando o hook useNavigate
 
 function Register() {
+  const navigate = useNavigate(); // Usando o hook para obter a função de navegação
+
   const handleRegister = async (data) => {
     try {
       const response = await axios.post('http://localhost:3001/users/register', data);
       console.log(response.data);
+
+      // Redireciona para a página de login após um registro bem-sucedido
+      navigate('/login');
+
     } catch (error) {
       if (error.response) {
         // O pedido foi feito e o servidor respondeu com um status fora do intervalo de 2xx

@@ -28,16 +28,17 @@ router.post('/login', async (req, res) => {
       // Enviar os detalhes do usuário e o token para o cliente
       res.json({
         user: {
-          id: user.id,
-          username: user.username,
-          email: user.email,
+            id: user.id,
+            username: user.username, // send the username
+            email: user.email,
         },
         token: token
-      });
+    });
       
   } catch (error) {
       res.status(400).json({ error: error.message });
   }
 });
+
 
 module.exports = router;
