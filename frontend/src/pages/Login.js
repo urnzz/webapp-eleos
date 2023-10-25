@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import './login.css';
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -29,24 +29,33 @@ function Login() {
     };
 
     return (
-        <div>
-            <h2>Login</h2>
+        <div class="login">
+            <div>
+                
+
+            </div>
+           
 
             {error && <p style={{ color: 'red' }}>{error}</p>}
+            <form>
+               <div class="items"> 
 
-            <input 
-                type="email"
-                placeholder="Email"
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-            />
-            <input 
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={e => setPassword(e.target.value)}
-            />
-            <button onClick={handleLogin}>Login</button>
+                    <label class="login-cpf">CPF/CNPJ</label><p></p> <input 
+                        type="email"
+                        placeholder="Email"
+                        value={email}
+                        onChange={e => setEmail(e.target.value)}
+                    /><br></br>
+
+                    <label class="senha">Senha</label><p></p><input 
+                        type="password"
+                        placeholder="Password"
+                        value={password}
+                        onChange={e => setPassword(e.target.value)}
+                    /><br></br>
+                     <button onClick={handleLogin}>Login</button>
+               </div> 
+            </form>
         </div>
     );
 }
