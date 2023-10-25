@@ -29,9 +29,9 @@ function App() {
          
               <h3 class="menu-texto">Contato</h3>
   
-              <h3 class="menu-texto"><Link to="/login">Login</Link></h3>
+              <Link class="menu-texto" to="/login">Login</Link>
 
-              <h3 class="menu-texto"><Link to="/register">Cadastrar</Link></h3>
+              <Link class="menu-texto" to="/register">Cadastrar</Link>
             {/* Você pode adicionar outros links de navegação aqui */}
           
           </div>
