@@ -31,16 +31,15 @@ function Login() {
 
     return (
         <div>
-    
-             <div class="fundo">
+                <div class="fundo">
              
-             </div>   
-         <div class="login-prestador"> 
+                 </div>   
+            <div class="login-prestador"> 
              {error && <p style={{ color: 'red' }}>{error}</p>}
 
              <form>
-             <h1 class="titulo-login"> Login</h1>
                 <div class="items"> 
+             <h1 class="titulo-login"> Login</h1>
  
                       <input 
                          class="login-caixa"

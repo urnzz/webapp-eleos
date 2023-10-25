@@ -14,21 +14,31 @@
 
 .login-prestador{
     display: flex;
-    margin-top: 132px;
+    margin-top: 245px;
     margin-left: 512px;
     margin-right: 531px;
     background: #1F232F;
-    width: 500px;
-    height: 500px;
+    width: 721px;
+    height: 683px;
     align-items: center;
+    justify-content: center;
     border-radius: 3.125rem;
     
 }
 
-.login-prestador .titulo-login{
- margin-left: 185px;
- font-size:50px;
- color:#45B0D2;
+.login-prestador .titulo-login{ 
+    text-align: center;
+    font-size:64px;
+    color:#45B0D2;
+    margin-bottom: 113px;
+    margin-right: 35px;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+    
+   
  
 }
 
@@ -36,40 +46,42 @@
     align-items: center;
 }
 
-.login-prestador .items{
-    margin-left: 125px;
-    margin-top: 50px;
-    font-size:25px;
-    float: center;
-}
+
 
 .login-prestador .items .login-caixa1{
-    width: 250px;
-    height: 30px;
-    text-align: center;
+    width: 320px;
+    height: 50px;
+    text-align:left;
     border-radius: 50px;
     margin-top: 26px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #F2ECF8;
     color:#000;
 }
 
 .login-prestador .items .login-caixa{
-    width: 250px;
-    height: 30px;
-    text-align: center;
-    border-radius: 50px;
+    width: 320px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #F2ECF8;
     color:#000;
     
 }
 
-.login-prestador .items .login-botao{
+.login-prestador  .login-botao{
+    
     margin-top: 70px;
-    float: center;
-    margin-left: 75px;
-    width: 100px;
-    height: 33px;
+    width: 193px;
+    height: 54px;
     border-radius: 50px;
     background-color: #45B0D2;
     color: #F2ECF8;
+    font-size: 25px;
+   margin-left: 55px;
+    
 }
 
 .fundo24{
