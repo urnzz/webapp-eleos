@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../pages/Menu.css';
-import './cadastro-instituicao.css';
+import './cadastro-prestador.css';
 
 function RegisterForm({ onRegister }) {
   const [formData, setFormData] = useState({
