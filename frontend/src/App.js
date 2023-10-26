@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import HomePage from './pages/HomePage';
+import Home from './pages/home';
+import MenuComponent from './components/Menu';
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -21,27 +23,15 @@ function App() {
   return (
     <Router>
       <div>
-        {/* Navegação */}
-        <nav>
-          <ul>
-            {!isAuthenticated ? (
-              <>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/register">Registrar</Link></li>
-                <li><Link to="/login">Login</Link></li>
-              </>
-            ) : (
-              <li><button onClick={handleLogout}>Logout</button></li>
-            )}
-            {/* Você pode adicionar outros links de navegação aqui */}
-          </ul>
-        </nav>
+        
+      <MenuComponent isAuthenticated={isAuthenticated} handleLogout={handleLogout} />
 
         {/* Definição das Rotas */}
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/" element={<HomePage />} />
+          <Route path="/tarefas" element={<HomePage />} />
           {/* Adicione outras rotas conforme necessário */}
         </Routes>
       </div>

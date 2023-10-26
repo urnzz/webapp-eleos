@@ -19,7 +19,7 @@ function Login() {
                 localStorage.setItem('username', response.data.user.username); // save the username
         
                 // (Opcional) Redireciona o usuário para uma página após o login
-                window.location.href = '/';
+                window.location.href = '/tarefas';
                 console.log("Login bem-sucedido!");
             } else {
                 setError("Sem resposta");
@@ -32,38 +32,12 @@ function Login() {
     };
 
     return (
-        <div>
-        <div className="menu">
-             <div className="menu-esquerda">
- 
-             </div>
- 
-             <div className="menu-direita">
-             
-                     <h3 className="menu-texto">Home</h3>
-                 
-                     <h3 className="menu-texto">Sobre</h3>
-                 
-                     <h3 className="menu-texto">Contato</h3>
-                 
-                     <h3 className="menu-texto">login</h3>
-                 
-                     <h3 className="menu-texto">Registrar</h3>
- 
-             </div>
- 
-         </div>
-             <div className="fundo">
-             
-             </div>
-             
- 
          <div className="login"> 
              {error && <p style={{ color: 'red' }}>{error}</p>}
              <form>
                 <div className="items"> 
  
-                     <label className="login-cpf">CPF/CNPJ</label><p></p> <input 
+                     <label className="login-cpf">E-mail</label><p></p> <input 
                          type="email"
                          placeholder="Email"
                          value={email}
@@ -80,28 +54,6 @@ function Login() {
                 </div> 
              </form>
          </div>
-             <div className="fundo2">
-             
-             </div>
-         <div className="rodape-footer">
-             <div className="footer-esquerda">
- 
-             </div>
-             <div className="footer-direita">
-                     <h3 className="footer-texto">Home</h3>
-                 
-                     <h3 className="footer-texto">Sobre</h3>
-                 
-                     <h3 className="footer-texto">Contato</h3>
-                 
-                     <h3 className="footer-texto">login</h3>
-                 
-                     <h3 className="footer-texto">Registrar</h3>
- 
-             </div>
-         </div>
-         
-     </div>
  
     );
 }

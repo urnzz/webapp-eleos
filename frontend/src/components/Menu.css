@@ -1,0 +1,64 @@
+.topnav {
+    background-color: #f2ecf8;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    width:100%;
+}
+
+.topnav a, .topnav .nav-button {
+    float: right;
+    color: #1f232f;
+    padding: 10px 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none; /* hide by default */
+}
+
+.topnav .menu-items.active a, 
+.topnav .menu-items.active .nav-button,
+.topnav .menu-toggle {
+    display: block; /* show when active */
+    float: none;
+    clear: both; 
+}
+
+.topnav a:hover, .topnav .nav-button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.menu-toggle {
+    background-color: #45b0d2;
+    color: #f2f2f2;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* For larger screens */
+@media screen and (min-width: 768px) {
+    .topnav a, .topnav .nav-button {
+        display: block;
+        
+    }
+
+    .topnav .menu-toggle {
+        display: none;
+    }
+}
+.topnav .logo {
+    float: left; /* To position it to the left of the navbar */
+    padding: 10px 16px; /* Padding around the logo for spacing */
+    display: block;
+    width: 100px; /* Adjust as necessary */
+    height: auto; /* This will maintain the aspect ratio */
+}

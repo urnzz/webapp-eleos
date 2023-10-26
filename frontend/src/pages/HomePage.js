@@ -41,7 +41,7 @@ const HomePage = () => {
     const username = localStorage.getItem('username');
 
     if (!token) {
-      alert('Please login to create a task.');
+      alert('Logue para criar uma tarefa.');
       // Redirect to the login page
       navigate('/login');
       return;
@@ -60,7 +60,7 @@ const HomePage = () => {
           }
         }
       );
-      console.log('Task created successfully!', response.data);
+      console.log('Tarefa criada com sucesso!', response.data);
 
       // Reload the page after the task has been created
       window.location.reload();
@@ -73,10 +73,10 @@ const HomePage = () => {
 
   return (
     <div>
-      <h1>Create New Task</h1>
+      <h1>Criar nova tarefa</h1>
       <form>
         <label>
-          Title:
+          Titulo:
           <input
             type="text"
             name="title"
@@ -86,7 +86,7 @@ const HomePage = () => {
         </label>
         <br />
         <label>
-          Description:
+          Descrição:
           <textarea
             name="description"
             value={newTask.description}
@@ -101,21 +101,21 @@ const HomePage = () => {
             value={newTask.status}
             onChange={handleInputChange}
           >
-            <option value="OPEN">Open</option>
-            <option value="IN_PROGRESS">In Progress</option>
-            <option value="COMPLETED">Completed</option>
+            <option value="OPEN">Aberta</option>
+            <option value="IN_PROGRESS">Em andamento</option>
+            <option value="COMPLETED">Completa</option>
           </select>
         </label>
         <br />
-        <button type="button" onClick={handleButtonClick}>Create Task</button>
+        <button type="button" onClick={handleButtonClick}>Criar tarefa</button>
       </form>
-      <h2>Open Tasks</h2>
+      <h2>Tarefas em aberto</h2>
       <ul>
         {tasks.map(task => (
           <li key={task.id}>
             <h3>{task.title}</h3>
             <p>{task.description}</p>
-            <p>Created by: {task.created_by_name}</p>
+            <p>Solicitado por: {task.created_by_name}</p>
           </li>
         ))}
       </ul>
